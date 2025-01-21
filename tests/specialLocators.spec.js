@@ -1,6 +1,7 @@
 const { test} = require ('@playwright/test')
 
 test('speciallocators ', async({page})=>{
+    //special locators of playwright
     await page.goto('https://rahulshettyacademy.com/angularpractice/');
    await page.getByLabel('Check me out if you Love IceCreams!').click();
    await page.getByLabel('Employed').click();
