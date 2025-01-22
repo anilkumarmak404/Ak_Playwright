@@ -16,7 +16,7 @@ test('form filling the application',async({page})=>{
    await page.locator('.login-section-wrapper h1').textContent('Account Created Successfully');
   
 })
-test.only('login to the application',async({page})=>{
+test('login to the application',async({page})=>{
     await page.goto('https://rahulshettyacademy.com/client');
     await page.locator('[id="userEmail"]').fill('anilnandha56@gmail.com')
     await page.locator('#userPassword').fill('@Anil4kumar@')
