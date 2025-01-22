@@ -22,7 +22,7 @@ test('wndow handling using playwright',async({browser})=>{
   console.log(domain)
  await page.locator('#username').fill(domain)
  console.log(await page.locator('#username').textContent());
- await page.pause();
+
       
 
 
