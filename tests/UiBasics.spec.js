@@ -1,8 +1,6 @@
 const {test, expect} = require('@playwright/test')
 
 test('browser context based testcase', async({page})=>{
-     const context = await browser.newContext();
-  const page = await context.newPage();
 const  un = page.locator('#username');
 const pw =  page.locator('[id="password"]')
    await page.goto('https://rahulshettyacademy.com/loginpagePractise/');
